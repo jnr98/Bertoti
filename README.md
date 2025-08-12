@@ -1,4 +1,4 @@
 ## Engenharia de Software - Fatec
 
-![Teste](Software_Engineer/IMG/Wallpaper.jpeg)
+<img src="Software_Engineer/IMG/Wallpaper.jpeg" width="300px"/>
 
