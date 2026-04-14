@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍺 Beer Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🍺 Beer Manager</h1>
+
+  <!-- ===== FORMULÁRIO ===== -->
+  <div class="form-container">
+    <h2 id="form-titulo">Adicionar Cerveja</h2>
+
+    <input type="hidden" id="id">
+
+    <label>Nome</label>
+    <input type="text" id="nome" placeholder="Ex: Heineken">
+
+    <label>Tipo</label>
+    <input type="text" id="tipo" placeholder="Ex: Lager">
+
+    <label>Teor Alcoólico (%)</label>
+    <input type="number" id="teor" placeholder="Ex: 5.0" step="0.1">
+
+    <label>Preço (R$)</label>
+    <input type="number" id="preco" placeholder="Ex: 8.50" step="0.01">
+
+    <div class="botoes">
+      <button onclick="salvar()">💾 Salvar</button>
+      <button onclick="limparForm()" class="btn-cancelar">✖ Cancelar</button>
+    </div>
+  </div>
+
+  <!-- ===== LISTA DE CERVEJAS ===== -->
+  <div class="lista-container">
+    <h2>Cervejas Cadastradas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>Teor (%)</th>
+          <th>Preço</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-body">
+        <!-- preenchido pelo JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const API = "http://localhost:8080/beer";
+
+    // ===== CARREGAR LISTA =====
+    function carregar() {
+      fetch(API)
+        .then(res => res.json())
+        .then(data => {
+          const tbody = document.getElementById("tabela-body");
+          tbody.innerHTML = "";
+
+          if (data.length === 0) {
+            tbody.innerHTML = `
+              <tr>
+                <td colspan="6" class="vazio">Nenhuma cerveja cadastrada ainda 🍺</td>
+              </tr>`;
+            return;
+          }
+
+          data.forEach(b => {
+            tbody.innerHTML += `
+              <tr>
+                <td>${b.id}</td>
+                <td>${b.nome}</td>
+                <td>${b.tipo}</td>
+                <td>${b.teorAlcoolico}%</td>
+                <td>R$ ${b.preco.toFixed(2)}</td>
+                <td>
+                  <button onclick="editar(${b.id}, '${b.nome}', '${b.tipo}', ${b.teorAlcoolico}, ${b.preco})" class="btn-editar">✏️ Editar</button>
+                  <button onclick="deletar(${b.id})" class="btn-deletar">❌ Deletar</button>
+                </td>
+              </tr>`;
+          });
+        });
+    }
+
+    // ===== SALVAR (CRIAR OU ATUALIZAR) =====
+    function salvar() {
+      const id    = document.getElementById("id").value;
+      const nome  = document.getElementById("nome").value;
+      const tipo  = document.getElementById("tipo").value;
+      const teor  = document.getElementById("teor").value;
+      const preco = document.getElementById("preco").value;
+
+      if (!nome || !tipo || !teor || !preco) {
+        alert("Preencha todos os campos!");
+        return;
+      }
+
+      const beer = { nome, tipo, teorAlcoolico: teor, preco };
+
+      const url    = id ? `${API}/${id}` : API;
+      const metodo = id ? "PUT" : "POST";
+
+      fetch(url, {
+        method: metodo,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(beer)
+      })
+      .then(() => {
+        limparForm();
+        carregar();
+      });
+    }
+
+    // ===== EDITAR =====
+    function editar(id, nome, tipo, teor, preco) {
+      document.getElementById("form-titulo").textContent = "✏️ Editar Cerveja";
+      document.getElementById("id").value    = id;
+      document.getElementById("nome").value  = nome;
+      document.getElementById("tipo").value  = tipo;
+      document.getElementById("teor").value  = teor;
+      document.getElementById("preco").value = preco;
+    }
+
+    // ===== DELETAR =====
+    function deletar(id) {
+      if (!confirm("Tem certeza que quer deletar?")) return;
+
+      fetch(`${API}/${id}`, { method: "DELETE" })
+        .then(() => carregar());
+    }
+
+    // ===== LIMPAR FORMULÁRIO =====
+    function limparForm() {
+      document.getElementById("form-titulo").textContent = "Adicionar Cerveja";
+      document.getElementById("id").value    = "";
+      document.getElementById("nome").value  = "";
+      document.getElementById("tipo").value  = "";
+      document.getElementById("teor").value  = "";
+      document.getElementById("preco").value = "";
+    }
+
+    // Carrega a lista ao abrir a página
+    carregar();
+  </script>
+
+</body>
+</html>
