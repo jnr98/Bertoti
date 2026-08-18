@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./perfil.png" width="160" height="160" alt="Flavio Pereira de Almeida Junior">
+  <img src="https://raw.githubusercontent.com/jnr98/Bertoti/assets/perfil.png" width="160" height="160" alt="Flavio Pereira de Almeida Junior">
 
   <h1>Flavio Pereira de Almeida Junior</h1>
   
