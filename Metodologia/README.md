@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./profile_circular.png" width="160" height="160" alt="Flavio Pereira de Almeida Junior">
+  <img src="./perfil.png" width="160" height="160" alt="Flavio Pereira de Almeida Junior">
 
   <h1>Flavio Pereira de Almeida Junior</h1>
   
