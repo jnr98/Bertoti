@@ -117,7 +117,7 @@ Também trabalhei com **Git e GitHub** no desenvolvimento colaborativo, utilizan
 
 #### 🛠️ Hard Skills
 
-##### ✅ Conhecimentos com autonomia
+##### ✅ O que desenvolvi (Com autonomia)
 
 - **SQL / MySQL**
   - Consultas utilizando `SELECT`;
@@ -144,7 +144,7 @@ Também trabalhei com **Git e GitHub** no desenvolvimento colaborativo, utilizan
   - Versionamento e desenvolvimento colaborativo;
   - Organização e manutenção de documentação no GitHub.
 
-##### 📘 Conhecimento intermediário
+##### 📘 O que desenvolvi (Conhecimento intermediário)
 
 - **Java / Spring Boot**
   - Programação Orientada a Objetos;
@@ -182,7 +182,7 @@ Também trabalhei com **Git e GitHub** no desenvolvimento colaborativo, utilizan
   - Comandos como `ls`, `cd`, `cp`, `mv`, `rm`, `grep`, `find`, `chmod`, `ps` e `systemctl`;
   - Experiência com Kubuntu, Ubuntu, Linux Mint e openSUSE.
 
-##### 🚀 O que gostaria de aprender e aprofundar
+##### 🌱 O que gostaria de desenvolver e aprofundar
 
 - **PL/SQL**
   - Estrutura básica `DECLARE`, `BEGIN` e `END`;
