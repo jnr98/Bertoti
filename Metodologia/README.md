@@ -54,7 +54,7 @@ O desafio consistiu no desenvolvimento de um sistema web para controle e anális
 > - **Git e GitHub**: Essenciais para o controle de versão e desenvolvimento colaborativo.
 > - **Jira**: Ferramenta utilizada para o gerenciamento de tarefas e acompanhamento das Sprints.
 
-#### 👨‍💻 Contribuições Pessoais
+#### 👨💻 Contribuições Pessoais
 
 <details>
   <summary><b>Atuação como Scrum Master</b></summary>
@@ -105,7 +105,7 @@ A funcionalidade foi pensada para facilitar a visualização e centralização d
   <summary><b>Contribuição técnica no desenvolvimento</b></summary>
   <br>
 
-Além da atuação como Scrum Master, também contribuí diretamente com o desenvolvimento do projeto através de **commits no repositório**.
+Além da atuação como Scrum Master, também contribuí diretamente com do desenvolvimento do projeto através de **commits no repositório**.
 
 Participei do desenvolvimento Backend utilizando **Java e Spring Boot**, trabalhando também com **APIs REST** durante a construção das funcionalidades do FlowTrack.
 
@@ -115,18 +115,187 @@ Também trabalhei com **Git e GitHub** no desenvolvimento colaborativo, utilizan
 
 </details>
 
-#### Hard Skills
-- **SQL / MySQL** : Sei fazer com autonomia
-- **Jira** : Sei fazer com autonomia
-- **Git / GitHub** : Sei fazer com autonomia
-- **Java / Spring Boot** : Sei fazer com ajuda
-- **APIs REST** : Sei fazer com ajuda
+#### 🛠️ Hard Skills
 
-#### Soft Skills
-- **Organização**: Estruturação das Sprints, documentação e acompanhamento de tarefas (Scrum Master).
-- **Comunicação**: Contato direto e aberto com o cliente via Slack/Teams e responsabilidade nas apresentações de entrega de Sprints.
-- **Proatividade / Autodidatismo**: Idealização da funcionalidade de mapas agregando valor extra não previsto inicialmente e aprendizado no fluxo.
-- **Trabalho em Equipe**: Atuação colaborativa constante e gestão de artefatos em conjunto com o PO.
+##### ✅ Conhecimentos com autonomia
+
+- **SQL / MySQL**
+  - Consultas utilizando `SELECT`;
+  - Filtros com `WHERE`, `AND`, `OR` e `LIKE`;
+  - Relacionamento de tabelas com `INNER JOIN`, `LEFT JOIN` e `RIGHT JOIN`;
+  - Ordenação de resultados com `ORDER BY`;
+  - Utilização de `DISTINCT`;
+  - Funções de agregação como `COUNT`, `SUM`, `AVG`, `MIN` e `MAX`;
+  - Investigação e validação de dados;
+  - Análise de falhas em processos de integração e sincronização.
+
+- **DBeaver**
+  - Criação e gerenciamento de conexões com bancos de dados;
+  - Execução de scripts e consultas SQL;
+  - Navegação entre schemas, tabelas e registros;
+  - Análise e validação de dados;
+  - Consultas para troubleshooting de integrações.
+
+- **Git / GitHub**
+  - `git clone`, `git add`, `git commit`, `git push` e `git pull`;
+  - Criação e utilização de branches;
+  - Merge entre branches;
+  - Resolução de conflitos de merge;
+  - Versionamento e desenvolvimento colaborativo;
+  - Organização e manutenção de documentação no GitHub.
+
+##### 📘 Conhecimento intermediário
+
+- **Java / Spring Boot**
+  - Programação Orientada a Objetos;
+  - Criação e organização de projetos com Spring Boot;
+  - Estruturação de aplicações em `Controller`, `Service` e `Repository`;
+  - Integração de aplicações com banco de dados;
+  - Desenvolvimento acadêmico de aplicações Backend.
+
+- **APIs REST**
+  - Métodos `GET`, `POST`, `PUT` e `DELETE`;
+  - Criação e consumo de endpoints;
+  - Utilização de parâmetros e corpo das requisições;
+  - Desenvolvimento acadêmico de APIs REST com Spring Boot.
+
+- **Insomnia**
+  - Testes de endpoints;
+  - Requisições `GET`, `POST`, `PUT` e `DELETE`;
+  - Configuração de Headers;
+  - Envio de JSON no Body;
+  - Utilização e validação de tokens;
+  - Análise de respostas e códigos HTTP.
+
+- **Docker**
+  - Criação e execução de containers;
+  - Utilização de imagens Docker;
+  - Uso de Docker Compose;
+  - Comandos como `docker ps`, `docker images`, `docker logs`, `docker exec` e `docker stop`;
+  - Análise de logs e troubleshooting básico de containers.
+
+- **Linux**
+  - Utilização do Linux como ambiente principal;
+  - Navegação e manipulação de arquivos pelo terminal;
+  - Instalação e atualização de pacotes;
+  - Gerenciamento básico de processos e serviços;
+  - Comandos como `ls`, `cd`, `cp`, `mv`, `rm`, `grep`, `find`, `chmod`, `ps` e `systemctl`;
+  - Experiência com Kubuntu, Ubuntu, Linux Mint e openSUSE.
+
+##### 🚀 O que gostaria de aprender e aprofundar
+
+- **PL/SQL**
+  - Estrutura básica `DECLARE`, `BEGIN` e `END`;
+  - Criação de variáveis;
+  - Condições com `IF / ELSE`;
+  - Loops com `LOOP` e `FOR`;
+  - Procedures e Functions;
+  - Tratamento básico de exceções.
+
+- **Spring Security**
+  - Configuração básica do Spring Security;
+  - Autenticação e autorização;
+  - Controle de acesso por usuário e roles;
+  - Proteção de endpoints;
+  - Autenticação utilizando JWT.
+
+- **Microservices**
+  - Estrutura básica de microsserviços;
+  - Criação de serviços independentes;
+  - Comunicação entre APIs;
+  - Requisições HTTP entre serviços;
+  - Integração de microsserviços com banco de dados.
+
+- **AWS**
+  - Conceitos básicos de AWS;
+  - Criação e configuração de instâncias EC2;
+  - Armazenamento com S3;
+  - Banco de dados com RDS;
+  - Deploy básico de aplicações na AWS;
+  - AWS CLI: `aws configure`, `aws s3 ls` e `aws s3 cp`.
+
+- **Cloud Computing**
+  - Conceitos de IaaS, PaaS e SaaS;
+  - Máquinas virtuais e armazenamento em nuvem;
+  - Banco de dados em Cloud;
+  - Deploy de aplicações;
+  - Conceitos básicos de escalabilidade e disponibilidade.
+
+- **Kubernetes**
+  - Conceitos de Pods, Deployments e Services;
+  - `kubectl get pods`;
+  - `kubectl get services`;
+  - `kubectl describe pod`;
+  - `kubectl logs`;
+  - `kubectl apply -f`;
+  - `kubectl delete`;
+  - Deploy básico de aplicações em containers.
+
+#### 🤝 Soft Skills
+
+##### ✅ O que desenvolvi
+
+- **Organização**
+  - Organização e acompanhamento das Sprints;
+  - Gerenciamento das atividades através do Jira;
+  - Organização da documentação no GitHub;
+  - Preparação dos materiais para apresentações.
+
+- **Comunicação**
+  - Contato direto com clientes através do Slack e Microsoft Teams;
+  - Participação em reuniões com a equipe;
+  - Apresentação de entregas durante as Sprints;
+  - Comunicação entre equipe, Product Owner e cliente.
+
+- **Trabalho em Equipe**
+  - Desenvolvimento colaborativo em projetos acadêmicos;
+  - Colaboração com Product Owner e desenvolvedores;
+  - Participação nas decisões e melhorias do projeto;
+  - Compartilhamento de ideias e soluções com a equipe.
+
+- **Proatividade**
+  - Proposição de novas funcionalidades e melhorias;
+  - Participação além das responsabilidades de Scrum Master;
+  - Contribuição técnica no desenvolvimento;
+  - Busca por soluções durante problemas e dificuldades do projeto.
+
+- **Resolução de Problemas**
+  - Investigação de problemas técnicos;
+  - Análise de dados e logs;
+  - Identificação de falhas em integrações;
+  - Busca pela causa do problema antes do direcionamento para outras equipes.
+
+##### 🌱 O que gostaria de desenvolver
+
+- **Liderança**
+  - Desenvolver minha capacidade de liderar equipes;
+  - Melhorar a distribuição e acompanhamento de atividades;
+  - Aprender a apoiar a equipe na resolução de dificuldades.
+
+- **Comunicação em Público**
+  - Melhorar apresentações para clientes e equipes;
+  - Desenvolver mais confiança ao apresentar projetos;
+  - Aprimorar a comunicação técnica de forma simples e objetiva.
+
+- **Gestão de Projetos**
+  - Aprofundar conhecimentos em metodologias ágeis;
+  - Melhorar planejamento e acompanhamento de projetos;
+  - Desenvolver conhecimentos em gestão de riscos e prioridades.
+
+- **Inglês Profissional**
+  - Aprimorar conversação;
+  - Desenvolver vocabulário técnico de TI;
+  - Melhorar a comunicação em reuniões e ambientes profissionais.
+
+- **Tomada de Decisão**
+  - Desenvolver análise de cenários;
+  - Melhorar a definição de prioridades;
+  - Tomar decisões com base em informações e dados.
+
+- **Gestão de Equipes**
+  - Desenvolver habilidades para coordenar pessoas;
+  - Melhorar o acompanhamento das atividades da equipe;
+  - Aprender técnicas de feedback e desenvolvimento de pessoas.
 
 <br><hr><br>
 
@@ -158,5 +327,5 @@ Também trabalhei com **Git e GitHub** no desenvolvimento colaborativo, utilizan
 
 <br>
 <div align="center">
-  <b>Obrigado por visitar meu portfólio! Sinta-se à vontade para conectar. 👨‍💻</b>
+  <b>Obrigado por visitar meu portfólio! Sinta-se à vontade para conectar. 👨💻</b>
 </div>
